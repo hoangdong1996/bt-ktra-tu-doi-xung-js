@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kểm tra từ đối xứng</title>
+</head>
+<body>
+<script>
+    function isPalinrome(strings) {
+        for (let i = 0; i < strings.length/2; i++) {
+            if(strings[i] !== strings[strings.length - i -1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+    let strings = "aadaa";
+    console.log(isPalinrome(strings));
+</script>
+</body>
+</html>
